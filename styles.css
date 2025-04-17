@@ -1,0 +1,157 @@
+body {
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    
+}
+
+header {
+    text-align: center;
+    background: #222;
+    color: white;
+    padding: 20px 10px;
+}
+
+header h1 {
+    font-size: 40px;
+    margin: 0;
+}
+
+
+nav {
+    background: #444;
+    padding: 10px;
+    width: 100%;
+    margin-top: 0; 
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #f0f0f0;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #ffcc00; 
+}
+
+.container {
+    /* background: rgb(190, 174, 174); */
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+main {
+    background: #e3dcdc;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 24px;
+    color: #222;
+}
+
+.date {
+    font-size: 14px;
+    color: #777;
+}
+
+article {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+}
+
+article img {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+figcaption {
+    font-size: 14px;
+    color: #555;
+    text-align: center;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+aside {
+    background: #e3dcdc;
+    padding: 20px;
+    width: 335px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 1px;
+   
+}
+
+aside h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+aside ul {
+    list-style: none;
+    padding: 0;
+}
+
+aside ul li {
+    margin-bottom: 10px;
+}
+
+aside ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+aside ul li a:hover {
+    color: #ffcc00;
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    background: #222;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 560px;
+        display: block;
+        padding: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+    aside {
+        width: 520px;
+    }
+}
